@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Super-Cypher</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Silkscreen:wght@700&display=swap" rel="stylesheet">
+        <nav class="navbar">
+              <div class="navi"><h1>SUPER-CIPHER</h1></div>
+        </nav>
+    </head>
+    <body>
+        <div class="bg">
+            <div class="container">
+                <div class="element">
+                    <strong><h3>Text</h3></strong><br><br>
+                    <textarea class="content" placeholder="Input Text" style="height:200px;width:300px;"></textarea>
+                </div>
+                <div class="cipherSelect element">
+                <span class="link"><select name="cipher">
+                        <option value="Caesar">Caesar Cipher</option>
+                        <option value="Vigenere">Vigenère Cipher</option>
+                        <option value="Rail">Rail Cipher</option>
+                    </select>
+                    <a class="nouline">❓</a>       
+                </span>
+                <div class="overlay">
+                    <div class="dialoguebox">
+                        <h3>Caesar Cipher</h3>
+                        <span class="popup">Caesar ciphers use a substitution method where letters in the alphabet are shifted by some fixed number of spaces to yield an encoding alphabet. A Caesar cipher with a shift of 11 would encode an A as a B, an M as an N, and a Z as an A, and so on.</span>
+                    </div>
+                </div>
+                    <span class="args">Shift Value :<br><input type="number" value="shift"></span>
+                    <button value="Encode">Encode</button>
+                    <button value="Decode">Decode</button>
+                </div>
+                <div class="element">
+                    <strong><h3>Cipher Text</h3></strong><br><br>
+                    <textarea class="ciphertext" placeholder="Ciphered Text" style="height:200px;width:300px;"></textarea>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+            <script src="./logic.js"></script>
+        </div>
+    </body>
+    
+</html>
